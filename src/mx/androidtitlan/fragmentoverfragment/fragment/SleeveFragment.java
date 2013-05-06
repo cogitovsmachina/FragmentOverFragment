@@ -1,5 +1,8 @@
-package mx.androidtitlan.fragmentoverfragment;
+package mx.androidtitlan.fragmentoverfragment.fragment;
 
+import mx.androidtitlan.fragmentoverfragment.R;
+import mx.androidtitlan.fragmentoverfragment.R.color;
+import mx.androidtitlan.fragmentoverfragment.R.layout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;

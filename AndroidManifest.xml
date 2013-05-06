@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="mx.androidtitlan.fragmentoverfragment.HomeActivity"
+            android:name="mx.androidtitlan.fragmentoverfragment.ui.HomeActivity"
             android:label="@string/app_name" 
             android:theme="@style/Sherlock.__Theme.DarkActionBar">
             <intent-filter>

@@ -17,11 +17,6 @@
         android:layout_marginTop="10dp" >
     </android.support.v4.view.ViewPager>
 
-    <fragment
-        android:id="@+id/newslistfragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/view_pager"
-        class="mx.androidtitlan.fragmentoverfragment.SampleListFragment" />
-
+	
+	
 </RelativeLayout>

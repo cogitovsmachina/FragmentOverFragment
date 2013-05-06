@@ -1,4 +1,4 @@
-package mx.androidtitlan.fragmentoverfragment;
+package mx.androidtitlan.fragmentoverfragment.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,6 +10,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import mx.androidtitlan.fragmentoverfragment.R;
+import mx.androidtitlan.fragmentoverfragment.R.array;
+import mx.androidtitlan.fragmentoverfragment.R.layout;
+import mx.androidtitlan.fragmentoverfragment.ui.HomeActivity;
 
 public class MenuFragment extends ListFragment {
 
