@@ -5,12 +5,12 @@ import java.util.List;
 
 import mx.androidtitlan.fragmentoverfragment.BaseActivity;
 import mx.androidtitlan.fragmentoverfragment.R;
-import mx.androidtitlan.fragmentoverfragment.adapter.ComplexPagerViewAdapter;
-import mx.androidtitlan.fragmentoverfragment.fragment.FirstProductFragment;
+import mx.androidtitlan.fragmentoverfragment.adapter.SleevePagerViewAdapter;
+import mx.androidtitlan.fragmentoverfragment.fragment.FirstSleeveImageFragment;
 import mx.androidtitlan.fragmentoverfragment.fragment.MenuFragment;
-import mx.androidtitlan.fragmentoverfragment.fragment.SecondProductFragment;
+import mx.androidtitlan.fragmentoverfragment.fragment.SecondSleeveImageFragment;
 import mx.androidtitlan.fragmentoverfragment.fragment.SleeveFragment;
-import mx.androidtitlan.fragmentoverfragment.fragment.ThirdProductFragment;
+import mx.androidtitlan.fragmentoverfragment.fragment.ThirdSleeveImageFragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -56,9 +56,8 @@ public class HomeActivity extends BaseActivity {
 		getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
 
 		// ViewPager adapter
-		mPagerAdapter = new ComplexPagerViewAdapter(this, createFragments());
+		mPagerAdapter = new SleevePagerViewAdapter(this, createFragments());
 		final ActionBar mActionBar = getSupportActionBar();
-		// mActionBar.setDisplayHomeAsUpEnabled(true);
 
 		mViewPager = (ViewPager) findViewById(R.id.view_pager);
 		mViewPager.setAdapter(mPagerAdapter);
@@ -68,11 +67,11 @@ public class HomeActivity extends BaseActivity {
 	private List<Fragment> createFragments() {
 		List<Fragment> list = new ArrayList<Fragment>();
 		list.add(Fragment.instantiate(this,
-				FirstProductFragment.class.getName()));
+				FirstSleeveImageFragment.class.getName()));
 		list.add(Fragment.instantiate(this,
-				SecondProductFragment.class.getName()));
+				SecondSleeveImageFragment.class.getName()));
 		list.add(Fragment.instantiate(this,
-				ThirdProductFragment.class.getName()));
+				ThirdSleeveImageFragment.class.getName()));
 		return list;
 	}
 

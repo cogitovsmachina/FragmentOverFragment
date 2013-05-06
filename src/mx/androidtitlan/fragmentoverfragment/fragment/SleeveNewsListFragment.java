@@ -15,7 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class SampleListFragment extends ListFragment {
+public class SleeveNewsListFragment extends ListFragment {
 
 	@Override
 	public void onListItemClick(ListView list, View view, int position, long id) {

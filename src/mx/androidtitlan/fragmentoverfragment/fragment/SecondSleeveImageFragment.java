@@ -7,10 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class SecondProductFragment extends Fragment{
+public class SecondSleeveImageFragment extends Fragment{
 
-	public static SecondProductFragment newInstance(String title) {
-		SecondProductFragment first = new SecondProductFragment();
+	public static SecondSleeveImageFragment newInstance(String title) {
+		SecondSleeveImageFragment first = new SecondSleeveImageFragment();
 		Bundle bundle = new Bundle();
 		bundle.putString("title", title);
 		first.setArguments(bundle);
@@ -26,7 +26,7 @@ public class SecondProductFragment extends Fragment{
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		View myFragmentView = inflater.inflate(R.layout.first_fragment,
+		View myFragmentView = inflater.inflate(R.layout.second_fragment,
 				container, false);
 
 		return myFragmentView;

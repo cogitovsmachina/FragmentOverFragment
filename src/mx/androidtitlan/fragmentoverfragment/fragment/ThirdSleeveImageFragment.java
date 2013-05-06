@@ -1,19 +1,16 @@
 package mx.androidtitlan.fragmentoverfragment.fragment;
 
 import mx.androidtitlan.fragmentoverfragment.R;
-import mx.androidtitlan.fragmentoverfragment.R.layout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridView;
 
-public class FirstProductFragment extends Fragment {
-	GridView gridView;
+public class ThirdSleeveImageFragment extends Fragment {
 
-	public static FirstProductFragment newInstance(String title) {
-		FirstProductFragment first = new FirstProductFragment();
+	public static ThirdSleeveImageFragment newInstance(String title) {
+		ThirdSleeveImageFragment first = new ThirdSleeveImageFragment();
 		Bundle bundle = new Bundle();
 		bundle.putString("title", title);
 		first.setArguments(bundle);
@@ -29,7 +26,7 @@ public class FirstProductFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		View myFragmentView = inflater.inflate(R.layout.first_fragment,
+		View myFragmentView = inflater.inflate(R.layout.third_fragment,
 				container, false);
 
 		return myFragmentView;

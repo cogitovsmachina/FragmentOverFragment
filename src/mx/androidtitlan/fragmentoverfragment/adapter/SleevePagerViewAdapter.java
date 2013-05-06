@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.view.ViewGroup;
 
-public class ComplexPagerViewAdapter extends FragmentStatePagerAdapter {
+public class SleevePagerViewAdapter extends FragmentStatePagerAdapter {
 
 	@Override
 	public Object instantiateItem(ViewGroup arg0, int arg1) {
@@ -17,7 +17,7 @@ public class ComplexPagerViewAdapter extends FragmentStatePagerAdapter {
 
 	private List<Fragment> fragments;
 
-	public ComplexPagerViewAdapter(FragmentActivity activity,
+	public SleevePagerViewAdapter(FragmentActivity activity,
 			List<Fragment> fragments) {
 		super(activity.getSupportFragmentManager());
 		this.fragments = fragments;
