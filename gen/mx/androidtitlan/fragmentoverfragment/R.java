@@ -10,7 +10,6 @@ package mx.androidtitlan.fragmentoverfragment;
 public final class R {
     public static final class array {
         public static final int birds=0x7f0b0001;
-        public static final int birds_img=0x7f0b0002;
         public static final int color_names=0x7f0b0000;
     }
     public static final class attr {
@@ -1034,17 +1033,8 @@ containing a value of this type.
         public static final int abs__textfield_searchview_right_holo_dark=0x7f02006d;
         public static final int abs__textfield_searchview_right_holo_light=0x7f02006e;
         public static final int abs__toast_frame=0x7f02006f;
-        public static final int eagle=0x7f020070;
-        public static final int flamingo=0x7f020071;
-        public static final int heron=0x7f020072;
-        public static final int ic_launcher=0x7f020073;
-        public static final int ostrich=0x7f020074;
-        public static final int peacock=0x7f020075;
-        public static final int penguin=0x7f020076;
-        public static final int shadow=0x7f020077;
-        public static final int toucan=0x7f020078;
-        public static final int turkey=0x7f020079;
-        public static final int vulture=0x7f02007a;
+        public static final int ic_launcher=0x7f020070;
+        public static final int shadow=0x7f020071;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f040025;
@@ -1086,30 +1076,29 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040018;
         public static final int abs__title=0x7f040020;
         public static final int abs__up=0x7f04000b;
-        public static final int action_settings=0x7f04003f;
+        public static final int action_settings=0x7f04003e;
         public static final int content_frame=0x7f040037;
         public static final int disableHome=0x7f040009;
         public static final int edit_query=0x7f04002b;
         public static final int fullscreen=0x7f040013;
-        public static final int grid_item_img=0x7f040038;
         public static final int homeAsUp=0x7f040006;
         public static final int left=0x7f040010;
         public static final int listMode=0x7f040002;
         public static final int margin=0x7f040012;
-        public static final int menu_frame=0x7f040039;
-        public static final int newslistfragment=0x7f04003b;
+        public static final int menu_frame=0x7f040038;
+        public static final int newslistfragment=0x7f04003a;
         public static final int normal=0x7f040001;
         public static final int right=0x7f040011;
-        public static final int row_icon=0x7f04003c;
-        public static final int row_title=0x7f04003d;
+        public static final int row_icon=0x7f04003b;
+        public static final int row_title=0x7f04003c;
         public static final int selected_view=0x7f040014;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
-        public static final int slidingmenumain=0x7f04003e;
+        public static final int slidingmenumain=0x7f04003d;
         public static final int tabMode=0x7f040003;
         public static final int useLogo=0x7f040004;
-        public static final int view_pager=0x7f04003a;
+        public static final int view_pager=0x7f040039;
         public static final int wrap_content=0x7f040000;
     }
     public static final class integer {
@@ -1141,16 +1130,15 @@ containing a value of this type.
         public static final int abs__simple_dropdown_hint=0x7f030015;
         public static final int activity_home=0x7f030016;
         public static final int content_frame=0x7f030017;
-        public static final int grid_item=0x7f030018;
-        public static final int list=0x7f030019;
-        public static final int list_grid=0x7f03001a;
-        public static final int menu_frame=0x7f03001b;
-        public static final int responsive_content_frame=0x7f03001c;
-        public static final int root_fragment=0x7f03001d;
-        public static final int row=0x7f03001e;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001f;
-        public static final int sherlock_spinner_item=0x7f030020;
-        public static final int slidingmenumain=0x7f030021;
+        public static final int list=0x7f030018;
+        public static final int list_grid=0x7f030019;
+        public static final int menu_frame=0x7f03001a;
+        public static final int responsive_content_frame=0x7f03001b;
+        public static final int root_fragment=0x7f03001c;
+        public static final int row=0x7f03001d;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001e;
+        public static final int sherlock_spinner_item=0x7f03001f;
+        public static final int slidingmenumain=0x7f030020;
     }
     public static final class menu {
         public static final int home=0x7f0c0000;
