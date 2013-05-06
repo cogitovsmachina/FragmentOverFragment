@@ -54,10 +54,11 @@ public class SleeveFragment extends Fragment {
 		RelativeLayout v = new RelativeLayout(getActivity());
 		// v.setBackgroundColor(color);
 		
+		
 		// Setting our ViewPager
-		mPagerAdapter = new SleevePagerViewAdapter(getActivity(), createFragments());
-		mViewPager = (ViewPager) getActivity().findViewById(R.id.view_pager);
-		mViewPager.setAdapter(mPagerAdapter);
+//		mPagerAdapter = new SleevePagerViewAdapter(getActivity(), createFragments());
+//		mViewPager = (ViewPager) getActivity().findViewById(R.id.view_pager);
+//		mViewPager.setAdapter(mPagerAdapter);
 		return v;
 	}
 

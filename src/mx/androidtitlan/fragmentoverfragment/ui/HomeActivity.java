@@ -5,6 +5,7 @@ import java.util.List;
 
 import mx.androidtitlan.fragmentoverfragment.BaseActivity;
 import mx.androidtitlan.fragmentoverfragment.R;
+import mx.androidtitlan.fragmentoverfragment.R.menu;
 import mx.androidtitlan.fragmentoverfragment.adapter.SleevePagerViewAdapter;
 import mx.androidtitlan.fragmentoverfragment.fragment.FirstSleeveImageFragment;
 import mx.androidtitlan.fragmentoverfragment.fragment.MenuFragment;
@@ -18,6 +19,7 @@ import android.support.v4.app.ListFragment;
 import android.support.v4.view.ViewPager;
 
 import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.view.MenuItem;
 import com.slidingmenu.lib.SlidingMenu;
 
 public class HomeActivity extends BaseActivity {
@@ -60,8 +62,7 @@ public class HomeActivity extends BaseActivity {
 //		final ActionBar mActionBar = getSupportActionBar();
 //		mViewPager = (ViewPager) findViewById(R.id.view_pager);
 //		mViewPager.setAdapter(mPagerAdapter);
-		
-		
+
 	}
 
 	private List<Fragment> createFragments() {
@@ -73,6 +74,16 @@ public class HomeActivity extends BaseActivity {
 		list.add(Fragment.instantiate(this,
 				ThirdSleeveImageFragment.class.getName()));
 		return list;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			toggle();
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
 	}
 
 	@Override
