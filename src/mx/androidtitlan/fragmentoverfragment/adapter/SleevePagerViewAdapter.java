@@ -23,6 +23,8 @@ public class SleevePagerViewAdapter extends FragmentStatePagerAdapter {
 		this.fragments = fragments;
 	}
 
+	
+
 	@Override
 	public Fragment getItem(int i) {
 		return fragments.get(i);

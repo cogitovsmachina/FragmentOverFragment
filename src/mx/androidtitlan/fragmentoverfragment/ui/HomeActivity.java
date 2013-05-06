@@ -55,13 +55,13 @@ public class HomeActivity extends BaseActivity {
 		getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 		getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
 
-		// ViewPager adapter
-		mPagerAdapter = new SleevePagerViewAdapter(this, createFragments());
-		final ActionBar mActionBar = getSupportActionBar();
-
-		mViewPager = (ViewPager) findViewById(R.id.view_pager);
-		mViewPager.setAdapter(mPagerAdapter);
-
+		// setting up our ViewPager
+//		mPagerAdapter = new SleevePagerViewAdapter(this, createFragments());
+//		final ActionBar mActionBar = getSupportActionBar();
+//		mViewPager = (ViewPager) findViewById(R.id.view_pager);
+//		mViewPager.setAdapter(mPagerAdapter);
+		
+		
 	}
 
 	private List<Fragment> createFragments() {
