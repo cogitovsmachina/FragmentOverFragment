@@ -41,7 +41,7 @@ public class HomeActivity extends BaseActivity {
 			mContent = getSupportFragmentManager().getFragment(
 					savedInstanceState, "mContent");
 		if (mContent == null)
-			mContent = new SleeveFragment("It works");
+			mContent = new SleeveFragment("", "home");
 
 		// set the Above View
 		setContentView(R.layout.content_frame);
@@ -58,10 +58,10 @@ public class HomeActivity extends BaseActivity {
 		getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
 
 		// setting up our ViewPager
-//		mPagerAdapter = new SleevePagerViewAdapter(this, createFragments());
-//		final ActionBar mActionBar = getSupportActionBar();
-//		mViewPager = (ViewPager) findViewById(R.id.view_pager);
-//		mViewPager.setAdapter(mPagerAdapter);
+		mPagerAdapter = new SleevePagerViewAdapter(this, createFragments());
+		final ActionBar mActionBar = getSupportActionBar();
+		mViewPager = (ViewPager) findViewById(R.id.view_pager);
+		mViewPager.setAdapter(mPagerAdapter);
 
 	}
 
@@ -93,6 +93,7 @@ public class HomeActivity extends BaseActivity {
 	}
 
 	public void switchContent(Fragment fragment) {
+		//TODO Remove all instances from last Fragment
 		mContent = fragment;
 		getSupportFragmentManager().beginTransaction()
 				.replace(R.id.content_frame, fragment).commit();

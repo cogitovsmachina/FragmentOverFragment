@@ -2,22 +2,16 @@
 <resources>
 
     <string-array name="color_names">
-        <item>Red</item>
-        <item>Green</item>
-        <item>Blue</item>
-        <item>White</item>
-        <item>Black</item>
-    </string-array>
-    <string-array name="birds">
-        <item>Eagle</item>
-        <item>Flamingo</item>
-        <item>Heron</item>
-        <item>Ostrich</item>
-        <item>Peacock</item>
-        <item>Penguin</item>
-        <item>Toucan</item>
-        <item>Turkey</item>
-        <item>Vulture</item>
+        <item>Inicio</item>
+        <item>Futbol</item>
+        <item>Futbol Americano</item>
+        <item>F1</item>
+        <item>Lucha Libre</item>
+        <item>Box</item>
+        <item>Beisbol</item>
+        <item>Basquetbol</item>
+        <item>Tenis</item>
+        <item>Videos</item>
     </string-array>
 
 </resources>

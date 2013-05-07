@@ -1,5 +1,7 @@
 package mx.androidtitlan.fragmentoverfragment.fragment;
 
+import mx.androidtitlan.fragmentoverfragment.R;
+import mx.androidtitlan.fragmentoverfragment.ui.HomeActivity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
@@ -8,11 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
-import mx.androidtitlan.fragmentoverfragment.R;
-import mx.androidtitlan.fragmentoverfragment.R.array;
-import mx.androidtitlan.fragmentoverfragment.R.layout;
-import mx.androidtitlan.fragmentoverfragment.ui.HomeActivity;
 
 public class MenuFragment extends ListFragment {
 
@@ -37,19 +34,34 @@ public class MenuFragment extends ListFragment {
 		Fragment newContent = null;
 		switch (position) {
 		case 0:
-			newContent = new SleeveFragment("Yay0");
+			newContent = new SleeveFragment("Inicio","home");
 			break;
 		case 1:
-			newContent = new SleeveFragment("Yay1");
+			newContent = new SleeveFragment("Futbol", "football");
 			break;
 		case 2:
-			newContent = new SleeveFragment("Yay2");
+			newContent = new SleeveFragment("Futbol Americano","american_football");
 			break;
 		case 3:
-			newContent = new SleeveFragment("Yay3");
+			newContent = new SleeveFragment("F1", "f1");
 			break;
 		case 4:
-			newContent = new SleeveFragment("Yay4");
+			newContent = new SleeveFragment("Lucha Libre", "lucha");
+			break;
+		case 5:
+			newContent = new SleeveFragment("Box", "box");
+			break;
+		case 6:
+			newContent = new SleeveFragment("Beisbol", "baseball");
+			break;
+		case 7:
+			newContent = new SleeveFragment("Basquetbol", "tenis");
+			break;
+		case 8:
+			newContent = new SleeveFragment("Tenis", "tennis");
+			break;
+		case 9:
+			newContent = new SleeveFragment("Videos", "videos");
 			break;
 		}
 		if (newContent != null)

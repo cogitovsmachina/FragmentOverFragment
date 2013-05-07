@@ -11,7 +11,9 @@ import mx.androidtitlan.fragmentoverfragment.R.layout;
 import mx.androidtitlan.fragmentoverfragment.adapter.SleevePagerViewAdapter;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +26,7 @@ public class SleeveFragment extends Fragment {
 	private String mTitle;
 	private SleevePagerViewAdapter mPagerAdapter;
 	private ViewPager mViewPager;
+	private int mChannel;
 
 	// public SleeveFragment() {
 	// this(R.color.white);
@@ -34,49 +37,25 @@ public class SleeveFragment extends Fragment {
 	// setRetainInstance(true);
 	// }
 
-	public SleeveFragment(String title) {
+	public SleeveFragment(String title, int channel) {
 		mTitle = title;
+		mChannel = channel;
 		setRetainInstance(true);
 	}
 
-	public SleeveFragment() {
-		super();
-	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		if (savedInstanceState != null)
-			mColorRes = savedInstanceState.getInt("mColorRes");
-		int color = getResources().getColor(R.color.white);
+			mTitle = savedInstanceState.getString(mTitle);
 		inflater.inflate(R.layout.root_fragment, container);
 		// construct the RelativeLayout
 		RelativeLayout v = new RelativeLayout(getActivity());
-		// v.setBackgroundColor(color);
-		
-		
-		// Setting our ViewPager
-//		mPagerAdapter = new SleevePagerViewAdapter(getActivity(), createFragments());
-//		mViewPager = (ViewPager) getActivity().findViewById(R.id.view_pager);
-//		mViewPager.setAdapter(mPagerAdapter);
+		getActivity().setTitle(mTitle);
 		return v;
 	}
-
-	private List<Fragment> createFragments() {
-		List<Fragment> list = new ArrayList<Fragment>();
-		getParentFragment();
-		// list.add(Fragment.instantiate(this,
-		// FirstSleeveImageFragment.class.getName()));
-		list.add(Fragment.instantiate(getActivity(),
-				FirstSleeveImageFragment.class.getName()));
-		getParentFragment();
-		list.add(Fragment.instantiate(getActivity(),
-				SecondSleeveImageFragment.class.getName()));
-		getParentFragment();
-		list.add(Fragment.instantiate(getActivity(),
-				ThirdSleeveImageFragment.class.getName()));
-		return list;
-	}
+	
 
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
